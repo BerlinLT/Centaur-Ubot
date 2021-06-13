@@ -67,11 +67,11 @@ async def set_afk(afk_e):
     if string:
         AFKREASON = string
         await afk_e.edit(
-            f"**✘ {ALIVE_NAME} Telah OFF ✘**\
-        \n✦҈͜͡➳ **Karena :** `{string}`"
+            f"**✘ Paduka {ALIVE_NAME} Lagi sok sibuk ✘**\
+        \n✦҈͜͡➳ **keknya lagi :** `{string}`"
         )
     else:
-        await afk_e.edit(f"**✘ {ALIVE_NAME} Telah OFF ✘**")
+        await afk_e.edit(f"**✘ emang {ALIVE_NAME} Lagi Sok sibuk sekarang ✘**")
     if user.last_name:
         await afk_e.client(
             UpdateProfileRequest(
