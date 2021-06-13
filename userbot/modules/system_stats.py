@@ -242,9 +242,9 @@ async def amireallyalive(alive):
         f"┣ ✥ `Modules  : `{len(modules)} \n"
         f"┣ ✥ `Uptime   : `{uptime} \n"
         f"┗━━━━━━━━━━━━━━━━ \n"
-        f"⚡️ **Repo Userbot :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) \n"
-        f"⚡️ **Grup Userbot :** [Tekan Disini](https://t.me/sharinguserbot) \n"
-        f"⚡️ **Owner :** [Risman](t.me/mrismanaziz) \n"
+        f"⚡️ **Repo Userbot :** [Berlin Gans](https://github.com/BerlinLT/Man-Userbot) \n"
+        f"⚡️ **Grup Userbot :** [Tekan Disini](https://t.me/@KingUserbotSupport) \n"
+        f"⚡️ **Owner :** [BERLIN](t.me/BerlinLT) \n"
     )
     if ALIVE_LOGO:
         try:
