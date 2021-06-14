@@ -27,13 +27,13 @@
 /**
 ```
 ### Repo Man-UserBot
-Repo Yang Dibuat Berbagai Repo Userbot Github dan di Recode Oleh [Risman](https://t.me/mrismanaziz)
+Repo Yang Dibuat Berbagai Repo Userbot Github dan di Froks Oleh [Berlin](https://t.me/BerlinLT)
 
 ## Generate String Session
 
 ### Run on repl.it
 
-Gabung Ke [Grup Support](https://t.me/sharinguserbot) Man-UserBot Lalu Ketik #string [TEKAN DISINI](https://t.me/sharinguserbot) Untuk Masuk Ke [Grup Support](https://t.me/sharinguserbot)
+Gabung Ke [Grup Support](https://t.me/KingUserbotSupport) Man-UserBot Lalu Ketik #string [TEKAN DISINI](https://t.me/KingUserbotSupport) Untuk Masuk Ke [Grup Support](https://t.me/KingUserbotSupport)
 <br>
 
 ## Cara Deploy 👷
