@@ -51,10 +51,10 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Berlinlt dyno.`"
+                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Centaur-Userbot dyno.`"
             )
             return repo.__del__()
-        await event.edit("`[HEROKU]: Update Deploy BerlinLT Sedang Dalam Proses...`")
+        await event.edit("`[HEROKU]: Update Deploy Centaur-Userbot Sedang Dalam Proses...`")
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
         heroku_git_url = heroku_app.git_url.replace(
@@ -68,7 +68,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         try:
             remote.push(refspec="HEAD:refs/heads/master", force=True)
         except GitCommandError as error:
-            await event.edit(f"{txt}\n`Terjadi Kesalahan Di Log:\n{error}`")
+            await event.edit(f"{txt}\n`yahhhh sialan Di Log:\n{error}`")
             return repo.__del__()
         build = app.builds(order_by="created_at", sort="desc")[0]
         if build.status == "failed":
@@ -79,14 +79,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`BerlinLT Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
+                "`Centaur-Userbot Berhasil Di Deploy! Lu udah bisa di gunakan kembali.`"
             )
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "**BerlinLT Berhasil Di Update**"
+                BOTLOG_CHATID, "#BOT \n" "**Centaur-Userbot Berhasil Di Update**"
             )
 
     else:
@@ -101,17 +101,17 @@ async def update(event, repo, ups_rem, ac_br):
         ups_rem.pull(ac_br)
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
-    await event.edit("**✥ BerlinLT** `Berhasil Di Update!`")
+    await event.edit("**✥ Centaur-Userbot** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await event.edit("**✥ BerlinLT** `Sedang di Restart....`")
+    await event.edit("**✥ Centaur-Userbot** `Sedang di Restart....`")
     await asyncio.sleep(1)
-    await event.edit("`Tunggu Beberapa Detik `")
+    await event.edit("`sabar dikit napa ajg `")
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**BerlinLT Sedang Di Perbarui**"
+            BOTLOG_CHATID, "#BOT \n" "**Centaur-Userbot Sedang Di Perbarui**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -173,13 +173,13 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
 
     if changelog == "" and force_update is False:
-        await event.edit(f"\n**✥ elves-Userbot Sudah Versi Terbaru**\n")
+        await event.edit(f"\n**✥ Centaur-Userbot Sudah Versi Terbaru**\n")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**✥ Pembaruan Untuk BetlinLT [{ac_br}] :\n\n✥ Pembaruan:**\n`{changelog}`"
+        changelog_str = f"**✥ Pembaruan Untuk Centaur-Userbot [{ac_br}] :\n\n✥ Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Buka File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -194,21 +194,21 @@ async def upstream(event):
         else:
             await event.edit(changelog_str)
         return await event.respond(
-            "✥ **Perintah Untuk Update BerlinLT**\n ›`.update now`\n ›`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Man-Userbot.__"
+            "✥ **Perintah Untuk Update Centaur-Userbot**\n ›`.update now`\n ›`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Centaur-Userbot.__"
         )
 
     if force_update:
         await event.edit(
-            "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
+            "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Sabar dikit .....`"
         )
     else:
-        await event.edit("`✣ Proses Update COWO GANTENG, Loading....1%`")
-        await event.edit("`✣ Proses Update COWO GANTENG, Loading....12%`")
-        await event.edit("`✣ Proses Update COWO GANTENG, Loading....25%`")
-        await event.edit("`✣ Proses Update COWO GANTENG, Loading....46%`")
-        await event.edit("`✣ Proses Update COWO GANTENG, Loading....76%`")
-        await event.edit("`✣ Proses Update COWO GANTENG, Updating...92%`")
-        await event.edit("`✣ Proses Update COWO GANTENG, Tunggu Sebentar....100%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Loading....1%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Loading....12%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Loading....25%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Loading....46%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Loading....76%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Updating...92%`")
+        await event.edit("`✣ Proses Update Centaur-Userbot, Tunggu Sebentar....100%`")
     if conf == "now":
         for commit in changelog.splitlines():
             if commit.startswith("- [NQ]"):
