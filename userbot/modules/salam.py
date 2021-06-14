@@ -65,6 +65,8 @@ CMD_HELP.update(
         \n  •  **Function : **LU SEMUA NGENTOT 🔥\
         \n\n  •  **Syntax :** `.j`\
         \n  •  **Function : **NIMBRUNG GOBLOKK!!!🔥\
+        \n\n  •  **Syntax :** `.w`\
+        \n  •  **Function : **jawab salam!!!🔥\
     "
     }
 )
