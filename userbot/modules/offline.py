@@ -112,7 +112,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond(f"**{ALIVE_NAME} Telah Kembali!**")
+        msg = await notafk.respond(f"**{ALIVE_NAME} udah on tuh buru!**")
         time.sleep(7)
         await msg.delete()
         await notafk.client(
@@ -193,7 +193,7 @@ async def mention_afk(mention):
             if mention.sender_id not in USERS:
                 if AFKREASON:
                     await mention.reply(
-                        f"**✘ {ALIVE_NAME} Sedang OFF ✘** {afk_since} **Yang Lalu.**\
+                        f"**✘ {ALIVE_NAME} masih OFF sabar dikit napa ✘** {afk_since} **Yang Lalu.**\
                         \n✦҈͜͡➳ **Karena :** `{AFKREASON}`"
                     )
                 else:
@@ -278,7 +278,7 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        f"✘ **{ALIVE_NAME} Sedang OFF ✘** {afk_since} **Yang Lalu** ✘.\
+                        f"✘ **{ALIVE_NAME} Bentar yahh ✘** {afk_since} **Yang Lalu** ✘.\
                         \n✦҈͜͡➳ **Karena :** `{AFKREASON}`"
                     )
                 else:
@@ -289,7 +289,7 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            f"✘ **{ALIVE_NAME} Sedang OFF ✘** {afk_since} **Yang Lalu. ✘**\
+                            f"✘ **{ALIVE_NAME} bentar gua lagi OFF ✘** {afk_since} **Yang Lalu. ✘**\
                             \n✦҈͜͡➳ **Karena :** `{AFKREASON}`"
                         )
                     else:
