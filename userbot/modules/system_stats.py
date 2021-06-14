@@ -243,7 +243,7 @@ async def amireallyalive(alive):
         f"┣ ✥ `Uptime   : `{uptime} \n"
         f"┗━━━━━━━━━━━━━━━━ \n"
         f"⚡️ **Repo Userbot :** [Berlin Gans](https://github.com/BerlinLT/Man-Userbot) \n"
-        f"⚡️ **Grup Userbot :** [Tekan Disini](https://t.me/@KingUserbotSupport) \n"
+        f"⚡️ **Grup Userbot :** [Tekan Disini](https://t.me/KingUserbotSupport) \n"
         f"⚡️ **Owner :** [BERLIN](t.me/BerlinLT) \n"
     )
     if ALIVE_LOGO:
@@ -310,7 +310,7 @@ async def amireallyalive(alive):
     await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) is Up and Running.**\n\n"
+        f"**[Man-Userbot](https://github.com/BerlinLT/Man-Userbot) is Up and Running.**\n\n"
         f"__**{ALIVE_TEKS_CUSTOM}**__\n\n"
         f"{ALIVE_EMOJI} **Master :** `{DEFAULTUSER}` \n"
         f"{ALIVE_EMOJI} **Modules :** `{len(modules)} Modules` \n"
@@ -318,7 +318,7 @@ async def amireallyalive(alive):
         f"{ALIVE_EMOJI} **Python Version :** `{python_version()}` \n"
         f"{ALIVE_EMOJI} **Telethon Version :** `{version.__version__}` \n"
         f"{ALIVE_EMOJI} **Bot Uptime :** `{uptime}` \n\n"
-        "    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sharinguserbot)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/Lunatic0de)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/mrismanaziz)**"
+        "    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/KingUserbotSupport)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/TeamKingUserbot)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/BerlinLT)**"
     )
     if ALIVE_LOGO:
         try:
