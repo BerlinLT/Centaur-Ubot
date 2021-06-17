@@ -208,6 +208,21 @@ async def typewriter(typew):
     await typew.edit("**eet tapi bo'ong🌚**")
 
 
+@register(outgoing=True, pattern='^.wibu(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(2)
+    await typew.edit("`Tidak.. Ada Wibu 😱😨`")
+    sleep(2)
+    await typew.edit("`Kita Telah Bertemu Dengan Ras Terkuat di Bumi`")
+    sleep(3)
+    await typew.edit("`Karena Itu kita harus Lari🏃🏃`")
+    sleep(1)
+    await typew.edit("`Lari... Ada Wibu Nolep`")
+    sleep(1)
+    await typew.edit("`Dasar Wibu Istri Kartun`")
+
+
 CMD_HELP.update(
     {
         "war": "**Plugin : **`war`\
