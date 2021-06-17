@@ -139,7 +139,7 @@ async def gben(userbot):
                     r"\\**#GBanned_User**//"
                     f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
                     f"**User ID:** `{user.id}`\n"
-                    f"**Action:** `Global Banned`"
+                    f"**Action:** `Lu udah gua Banned`"
                 )
             except BaseException:
                 b += 1
@@ -156,8 +156,8 @@ async def gben(userbot):
         r"\\**#GBanned_User**//"
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
         f"**User ID:** `{user.id}`\n"
-        f"**Action:** `Global Banned by {ALIVE_NAME}`"
-        f"**pesan:** __Mangkanya jangan kebanyakan bacot jamet__'"
+        f"**Action:** `Global Banned by {ALIVE_NAME}`\n"
+        f"**pesan:** __Mangkanya jangan kebanyakan bacot jamet__`"
     )
 
 
@@ -226,8 +226,8 @@ async def gunben(userbot):
         r"\\**#UnGbanned_User**//"
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
         f"**User ID:** `{user.id}`\n"
-        f"**Action:** `UnGBanned by {ALIVE_NAME}`"
-        f"**pesan:** `kalo udah gua unGban gak ush bertingkah lagi yeee🔥** [{user.first_name}](tg://user?id={user.id})\n"
+        f"**Action:** `UnGBanned by {ALIVE_NAME}`\n"
+        f"**pesan:** `kalo udah gua unGban gak ush bertingkah lagi yeee🔥** [{user.first_name}](tg://user?id={user.id})`"
     )
 
 
