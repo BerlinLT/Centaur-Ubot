@@ -135,8 +135,8 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
-        f"**Hey**, __I am using__ 🇮🇩 **Centaur-Userbot** 🇮🇩\n\n"
-        f"✣ **Repo :** [Repo](https://github.com/BerlinLT/Man-Userbot)\n"
+        f" 🇮🇩 **Centaur-Userbot** 🇮🇩\n\n"
+        f"•**pencet aja :** [Repo](https://github.com/BerlinLT/Man-Userbot)\n"
     )
 
 
