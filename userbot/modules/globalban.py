@@ -193,7 +193,7 @@ async def gunben(userbot):
     if user:
         if user.id == 844432220:
             return await dark.edit(
-                "`Man Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya`"
+                "`Berlin Tidak Bisa Terkena Perintah Ini, Karna Dia Ganteng`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
@@ -227,6 +227,7 @@ async def gunben(userbot):
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
         f"**User ID:** `{user.id}`\n"
         f"**Action:** `UnGBanned by {ALIVE_NAME}`"
+        f"**pesan:** `kalo udah gua unGban gak ush bertingkah lagi yeee🔥** [{user.first_name}](tg://user?id={user.id})\n"
     )
 
 
