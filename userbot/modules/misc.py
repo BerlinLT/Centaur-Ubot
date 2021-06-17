@@ -140,7 +140,7 @@ async def repo_is_here(wannasee):
         f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
         f"✣ **Group Support :** [Sharing Userbot](t.me/KingUserbotSupport)\n"
         f"✣ **Owner Repo :** [Berlin](t.me/BerlinLT)\n"
-        f"✣ **Repo :** [Man-Userbot](https://github.com/BerlinLT/Man-Userbot)\n"
+        f"✣ **Repo :** [Repo](https://github.com/BerlinLT/Man-Userbot)\n"
     )
 
 
