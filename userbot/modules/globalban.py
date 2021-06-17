@@ -227,7 +227,7 @@ async def gunben(userbot):
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n"
         f"**User ID:** `{user.id}`\n"
         f"**Action:** `UnGBanned by {ALIVE_NAME}`\n"
-        f"**pesan:** `kalo udah gua unGban gak ush bertingkah lagi yeee🔥 **[{user.first_name}]**`"
+        f"**pesan:** `kalo udah gua unGban gak ush bertingkah lagi yeee🔥 [{user.first_name}](tg://user?id={user.id})\n"
     )
 
 
