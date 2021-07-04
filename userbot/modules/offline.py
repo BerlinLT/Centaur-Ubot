@@ -204,7 +204,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await mention.reply(
-                            f"**✘ {ALIVE_NAME} Masih OFF ✘** {afk_since} **Yang Lalu.**\
+                            f"**✘ {ALIVE_NAME} Bentar lagi ✘** {afk_since} **Dari tadi.**\
                             \n✦҈͜͡➳ **Karena :** `{AFKREASON}`"
                         )
                     else:
